@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="Table/css " href="../../Table_css.css"?>
+<booking>
+
+		
+			<table> 
+				 <Name>"L1"</Name> 
+				<Max> 8 </Max>
+				<location>Top Right coner</location>
+				<status>Available</status>
+			</table>
+			
+			<table>
+				<Name>"L2"</Name> 
+				<Max> 6 </Max>
+				<location> Bottom Right Coner </location>
+				<status>Booked</status>
+			</table>
+			
+			<table>
+				<Name>"L3"</Name>
+				<Max> 4 </Max>
+				<location> Top Left Coner</location>
+				<status>Booked</status>
+			</table>
+			
+			<table>
+				<Name>"L4"</Name> 
+				<Max> 4 </Max>
+				<location> Left Side of the room </location>
+				<status>Available</status>
+			</table>
+			
+			<table>
+				<Name>"L5"</Name> 
+				<Max> 2 </Max>
+				<location> Bottom Left coner </location>
+				<status>Booked</status>
+			</table>
+			
+			<table>
+				<Name>"L6"</Name>
+				<MaxPpl> 2 </MaxPpl>
+				<location> Bottom of the room</location>
+				<status>Available</status>
+			</table>
+		
+	
+</booking>

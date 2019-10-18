@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Menu List</title>
+</head>
+
+<body>
+	<script>
+	function product(No,FoodName,Image,Description,Type,Price) {
+					this.No=No;
+    				this.FoodName = FoodName;
+   					this.Image = Image;
+    				this.Description =Description;
+		  			this.Type=Type;
+					this.Price=Price;
+    				
+}
+var prod1 = new product('F1','ChickenMarita','food-image1.jpg','Healthy Meal with less Carbs','Gluten Free',25) ;
+var prod2 = new product('F2','ChickenStuwe','food-image2.jpg','Healthy Meal with less Carbs','Gluten Free',30) ;
+var prod3 = new product('F3','Thai Noodles with salad','food-image3.jpg', 'Healthy Meal with fresh vegies','Gluten Free, Egg Free',25) ;
+var prod4 = new product('F4','Clud Sandwich with Fries','food-image4.jpg', 'Simple Diet Meal', 'Gluten Free',20) ;
+var prod5 = new product('F5','GrillBeefMash','food-image5.jpg','Healthy,Simple Meal','Gluten Free',20) ;
+var prod6 = new product('F6','Vegi Dumpling','food-image6.jpg', 'Balance diet with less carb Meal','Vegitarian , Gluten Free',18) ;
+var prod7 = new product('F7','Beef Blonges','food-image7.jpg','High Proten Healthy Meal','Gluten Free',25);
+var prod8 = new product('F8','Squid Beef patch','food-image8.jpg','Simple ,less Carbs Healthy Meal','Gluten Free',20);
+var prod9 = new product('F9','Salmon Feasta','food-image9.jpg','Healthy diet Meal with fresh Salmon','Semi-Vegi ,Gluten Free',25);
+var prod10 = new product('F10','Indian Biriyani','food-image10.jpg','High Carbs Meal- Indian Authenic Aroma','Gluten Free',30);
+var prod11 = new product('F11','Prawn Green Dish','food-image11.jpg','Simple Delious Meal with Green Curry','Gluten Free',18);
+var prod12 = new product('F12','Italian pasta Combo','food-image12.jpg','Healthy Meal with Fresh vegies','Vegitarian ,Gluten Free',20);
+var prod13 = new product('F13','Vegi Ring','food-image13.jpg','Healthy Fresh Vegies with salad dressing. Less Carbs','Vegitarian,Gluten Free',20);
+var prod14 = new product('D14','BerryBills Puding','food-d-image1.jpg','Fresh Fruits with Maple syrup caramel puding','Gluten Free',15);
+var prod15 = new product('D15','Mix Fruit Shobar','food-d-image2.jpg','Balance sweet and sour feeling','Gluten Free',15);
+var prod16 = new product('D16','Beetroot Mac Ring','food-d-image3.jpg','Beetroot ice cream with choco stawbery mooze','Gluten Free',12);
+var prod17 = new product('D17','Mango Twist','food-d-image4.jpg','Fresh cut Mango with Vanila Milk ice cream','Gluten Free',15);
+var prod18 = new product('D18','BerryTaramus cheese cake','food-d-image5.jpg','Fresh Stawbery with cheese cake','Gluten Free',15);
+var prod19 = new product('B19','Watermelon Jalapeno Margarita','food-b-image1.jpg','Water melon puree with fresh jalapeno','liquor',15);
+var prod20 = new product('B20','Fruit Majito','food-b-image2.jpg','Combination of Fruit with Cocount cream','Soft Drink',10);
+var prod21 = new product('B21','Lime Cocktail','food-b-image3.jpg','Fresh lime wth soda','Soft Drink',10.5);
+var prod22 = new product('B22','Breez fine Wine','food-b-image4.jpg','New Style Wine','Liquor',15);
+var products = [prod1, prod2, prod3, prod4, prod5, prod6, prod7, prod8, prod9, prod10, prod11, prod12,prod13, prod14, prod15, prod16, prod17, prod18,prod19, prod20, prod21,prod22];
+		
+		
+	
+	function show_products(){
+		var displaytext='';
+		var table = document.getElementById('dispProduct');
+		for (var i=0; i<products.length;i++ ){
+			var row = table.insertRow(i);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			var cell4 = row.insertCell(3);
+			var cell5 = row.insertCell(4);
+			var cell6 = row.insertCell(5);
+			var cell7 = row.insertCell(6);
+			var cell8 = row.insertCell(7);
+		var cellName8 ='ss'+i;
+		cell8.setAttribute('name', cellName8); // this is for quantity
+		var quantityInput = document.createElement('input');
+		var qname= 'q' +i;
+		quantityInput.setAttribute('type', 'number');
+		quantityInput.setAttribute('name',qname);
+		quantityInput.setAttribute('id',qname);
+		quantityInput.setAttribute('style','width:35px;');
+		cell8.appendChild(quantityInput);
+			var cellName = 's'+i;
+			cell6.setAttribute("name",cellName);
+			cell1.innerHTML = products[i].No;
+			cell2.innerHTML = products[i].FoodName;
+			cell3.innerHTML = '<img src="../images/' + products[i].Image + '"/>';
+			cell4.innerHTML = products[i].Description;
+			cell5.innerHTML = products[i].Type;
+			cell6.innerHTML = '$'+ products[i].Price;
+			
+			var checkbox = document.createElement("input");
+			var cname = 'ch' +i;
+			checkbox.setAttribute("type","checkbox");
+			checkbox.setAttribute("name",cname);
+			checkbox.setAttribute("id",cname);
+			checkbox.setAttribute("value",products[i].Price);
+			checkbox.checked = false;
+			checkbox.setAttribute('onclick','myChange(this.value, this.name)');
+			cell7.appendChild(checkbox);
+		}
+	}
+		function calculate_cost(){
+		var result='';
+		var ncheckbox='';
+		var qinput='';
+		var total=0;
+			for (var i=0; i<products.length; i++){
+				ncheckbox='ch' + i ;
+				qinput='q' + i;
+				var x = document.getElementById(ncheckbox);
+				if(document.getElementById(ncheckbox).checked){
+					//product selected
+					total=total + Number(document.getElementById(ncheckbox).value) * Number(document.getElementById(qinput).value);
+				}
+			}
+		document.getElementById('calcost').innerHTML='Total to pay = $'+total;
+	}
+	
+	function myChange(val, qn) {
+	 //alert("The input value has changed. " + val);
+	 if ( document.getElementById('ch' +qn).checked)
+	 document.getElementById('q' +qn).value=1;
+	 else document.getElementById('q' +qn).value=0;
+}
+
+</script>
+<h1>Menu Section</h1>
+
+<button type="button" onClick="show_products()"> Menu List</button>
+	<button type="button" onClick="calculate_cost()">Calculate Total</button>
+	<p id="calcost"></p>
+<table border="1" id="dispProduct">
+</table>
+
+</body>
+</html>

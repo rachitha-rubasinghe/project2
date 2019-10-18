@@ -1,0 +1,22 @@
+<!doctype html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title>Spacecraft Game</title> 
+		<link rel="stylesheet" href="../css/game.css">
+		<script type="text/javascript" src="../js/game.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<div id="outer">			
+			<canvas id="myCanvas" width="1024" height="700" tabindex="0" style="background: url('../images/universe.jpg') no-repeat;">Canvas tag not supported.</canvas>
+			<button type="button" id="start" onclick="start()">Start</button>
+			<button type="button" id="restart" onclick="restart()">Restart</button>
+			<img src="../images/spacecraft.png" alt="spacecraft" id="craft">
+			<img src="../images/spacecraft-reverse.png" alt="reversed-spacecraft" id="reverseCraft">
+		</div>
+	</body>
+</html>
+
+

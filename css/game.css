@@ -1,0 +1,48 @@
+#outer{
+	width: 1024px;
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+}
+
+#start{
+	position: absolute;
+	top: 20px;
+	left:750px;
+}
+
+#restart{
+	position: absolute;
+	top: 20px;
+	left: 870px;
+}
+
+button{
+	width: 100px;
+	height: 30px;
+	border: 3px solid #8cbbd5;
+	border-radius: 10px;
+	background-color: #c1548b;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	font-family: cursive;
+	cursor: pointer;	
+}
+
+#myCanvas{
+	position: absolute;
+}
+
+#craft{
+	position: absolute;
+	top: 200px;
+	left: 300px;
+}
+
+#reverseCraft{
+	position: absolute;
+	top:200px;
+	left:300px;
+	opacity: 0;
+}

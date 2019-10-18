@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table2</title>
+	<link rel="stylesheet" href="../css/Room_css.css">
+	
+</head>
+
+<body>
+	<h1> Lavender Room</h1>
+	<img src="../images/capture-table-lavender_mod.jpg" alt="table2" width="500" height="500"/> <br>
+	
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+		$get("LavenderRoom.xml",function(data){
+			 var xml=data;
+			 var $table=$(xml).find("table");
+		    $table.each(function(){
+				var Name=$(this).find('Name').text(), Max=$(this).find('Max').text(),location=$(this).find('location').text(),status=$(this).find('status');
+				var image=Max+".jpeg";
+				$("#div").append("<img src="+$image+ " alt="image">);
+								 
+				});
+			 
+			 });
+	</script>
+	<div id="image"></div>
+	
+	
+	<a href="menu_list.html"> <button type="click">Menu List</button></a>
+	
+</body>
+</html>

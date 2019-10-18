@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+MenuList{
+	background-color: antiquewhite;
+	width: 100%;
+	margin-left: 30pt;
+}
+
+Item{
+	display: block;
+margin-bottom: 30pt;
+margin-left: 20pt;
+background-color:antiquewhite;
+}
+
+No{
+	margin-left: 20pt;
+	font-size: 20pt bold;
+}
+
+FoodName{
+	margin-left: 20pt;
+	font-size: 20pt bold;
+	font-style: italic ;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	}
+
+DesertName{
+	margin-left: 20pt;
+	font-size: 20pt bold;
+	font-style: italic ;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	}
+
+BeverageName{
+	margin-left: 20pt;
+	font-size: 20pt bold;
+	font-style: italic ;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	}
+
+Description{
+	margin-left: 20pt;
+	font-size: 20pt ;
+	font-style:oblique;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	
+	}
+
+Type{
+	margin-left: 20pt;
+	font-size: 20pt;
+	font-style:oblique ;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	
+	}
+
+Price{
+	margin-left: 20pt;
+	font-size: 20pt;
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table1</title>
+	<link rel="stylesheet" href="../css/Room_css.css">
+	
+
+</head>
+
+<body>
+	<h1> Candle Room</h1>
+	<img src="../images/capture-table-candle_mod.jpg" alt="table1" width="500" height="500" usemap="#Map"/>
+   
+    
+    <br>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+		$get("CandleRoom.xml",function(data){
+			 var xml=data;
+			 var $table=$(xml).find("table");
+		    $table.each(function(){
+				var Name=$(this).find('Name').text(), Max=$(this).find('Max').text(),location=$(this).find('location').text(),status=$(this).find('status');
+				var image=Max+".jpeg";
+				$("#div").append("<img src="+$image+ " alt="image">);
+								 });
+			 
+			 });
+	</script>
+	<div id="image"></div>
+	
+		  <a href="menu_list.html"> <button type="click">Menu List</button></a>
+<table id="MainTable">
+	<tbody id="BodyRows"></tbody>
+</table>
+	
+</body>
+</html>
+ 

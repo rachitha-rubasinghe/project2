@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../../menu_list.css"?>
+
+<MenuList>
+	<Item>
+		<No>F1</No>
+		<FoodName>ChickenMarita</FoodName>
+		<Image>food-image1.jpg</Image>
+		<Description> Healthy Meal with less Carbs</Description>
+		<Type>Gluten Free</Type>
+		<Price>25</Price>
+		
+	</Item>
+	<Item>
+		<No>F2</No>
+		<FoodName>ChickenStuwe</FoodName>
+		<Image>food-image2.jpg</Image>
+		<Description>Healthy Meal with less Carbs</Description>
+		<Type>Gluten Free</Type>
+		<Price>30</Price>		
+	</Item>
+	<Item>
+		<No>F3</No>
+		<FoodName>Thai Noodles with salad</FoodName>
+		<Image>food-image3.jpg</Image>
+		<Description> Healthy Meal with fresh vegies</Description>
+		<Type>Gluten Free, Egg Free</Type>
+		<Price>25</Price>		
+	</Item>
+	<Item>
+		<No>F4</No>
+		<FoodName>Clud Sandwich with Fries</FoodName>
+		<Image>food-image4.jpg</Image>
+		<Description> Simple Diet Meal</Description>
+		<Type> Gluten Free</Type>
+		<Price>20</Price>		
+	</Item>
+	<Item>
+		<No>F5</No>
+		<FoodName>GrillBeefMash</FoodName>
+		<Image>food-image5.jpg</Image>
+		<Description>Healthy,Simple Meal</Description>
+		<Type>Gluten Free</Type>
+		<Price>20</Price>		
+	</Item>
+	<Item>
+		<No>F6</No>
+		<FoodName>Vegi Dumpling</FoodName>
+		<Image>food-image6.jpg</Image>
+		<Description> Balance diet with less carb Meal</Description>
+		<Type> Vegitarian , Gluten Free</Type>
+		<Price>18</Price>		
+	</Item>
+	<Item>
+		<No>F7</No>
+		<FoodName>Beef Blonges</FoodName>
+		<Image>food-image7.jpg</Image>
+		<Description>High Proten Healthy Meal</Description>
+		<Type> Gluten Free</Type>
+		<Price>25</Price>		
+	</Item>
+	<Item>
+		<No>F8</No>
+		<FoodName>Squid Beef patch</FoodName>
+		<Image>food-image8.jpg</Image>
+		<Description>Simple ,less Carbs Healthy Meal</Description>
+		<Type>Gluten Free</Type>
+		<Price>20</Price>		
+	</Item>
+	<Item>
+		<No>F9</No>
+		<FoodName>Salmon Feasta</FoodName>
+		<Image>food-image9.jpg</Image>
+		<Description> Healthy diet Meal with fresh Salmon</Description>
+		<Type>Semi-Vegi ,Gluten Free</Type>
+		<Price>25</Price>		
+	</Item>
+	<Item>
+		<No>F10</No>
+		<FoodName>Indian Biriyani</FoodName>
+		<Image>food-image10.jpg</Image>
+		<Description> High Carbs Meal- Indian Authenic Aroma</Description>
+		<Type> Gluten Free</Type>
+		<Price>30</Price>		
+	</Item>
+	<Item>
+		<No>F11</No>
+		<FoodName>Prawn Green Dish</FoodName>
+		<Image>food-image11.jpg</Image>
+		<Description> Simple Delious Meal with Green Curry</Description>
+		<Type> Gluten Free</Type>
+		<Price>18</Price>		
+	</Item>
+	<Item>
+		<No>F12</No>
+		<FoodName>Italian pasta Combo</FoodName>
+		<Image>food-image12.jpg</Image>
+		<Description> Healthy Meal with Fresh vegies</Description>
+		<Type> Vegitarian ,Gluten Free</Type>
+		<Price>20</Price>		
+	</Item>
+	<Item>
+		<No>F13</No>
+		<FoodName>Vegi Ring</FoodName>
+		<Image>food-image13.jpg</Image>
+		<Description> Healthy Fresh Vegies with salad dressing. Less Carbs</Description>
+		<Type> Vegitarian , Gluten Free</Type>
+		<Price>20</Price>		
+	</Item>
+	<Item>
+		<No>D14</No>
+		<DesertName>BerryBills Puding</DesertName>
+		<Image>food-d-image1.jpg</Image>
+		<Description>Fresh Fruits with Maple syrup caramel puding</Description>
+		<Type> Gluten Free</Type>
+		<Price>15</Price>
+	</Item>
+	<Item>
+		<No>D15</No>
+		<DesertName>Mix Fruit Shobar</DesertName>
+		<Image>food-d-image2.jpg</Image>
+		<Description> Balance sweet and sour feeling</Description>
+		<Type> Gluten Free</Type>
+		<Price>15</Price>
+	</Item>
+	<Item>
+		<No>D16</No>
+		<DesertName>Beetroot Mac Ring</DesertName>
+		<Image>food-d-image3.jpg</Image>
+		<Description> Beetroot ice cream with choco stawbery mooze</Description>
+		<Type> Gluten Free </Type>
+		<Price>12</Price>
+	</Item>
+	<Item>
+		<No>D17</No>
+		<DesertName>Mango Twist</DesertName>
+		<Image>food-d-image4.jpg</Image>
+		<Description> Fresh cut Mango with Vanila Milk ice cream</Description>
+		<Type> Gluten Free</Type>
+		<Price>15</Price>
+	</Item>
+	<Item>
+		<No>D18</No>
+		<DesertName>BerryTaramus cheese cake </DesertName>
+		<Image>food-d-image5.jpg</Image>
+		<Description> Fresh Stawbery with cheese cake </Description>
+		<Type>Gluten Free</Type>
+		<Price>15</Price>
+	</Item>
+	<Item>
+		<No>B19</No>
+		<BeverageName>Watermelon Jalapeno Margarita</BeverageName>
+		<Image>food-b-image1.jpg</Image>
+		<Description> Water melon puree with fresh jalapeno </Description>
+		<Type>liquor</Type>
+		<Price>15</Price>
+	</Item>
+	<Item>
+		<No>B20</No>
+		<BeverageName>Fruit Majito</BeverageName>
+		<Image>food-b-image2.jpg</Image>
+		<Description> Combination of Fruit with Cocount cream</Description>
+		<Type> Soft Drink</Type>
+		<Price>10</Price>
+	</Item>
+	<Item>
+		<No>B21</No>
+		<BeverageName>Lime Cocktail</BeverageName>
+		<Image>food-b-image3.jpg</Image>
+		<Description> Fresh lime wth soda</Description>
+		<Type> Soft Drink</Type>
+		<Price>10.5</Price>
+	</Item>
+	<Item>
+		<No>B22</No>
+		<BeverageName>Breez fine Wine</BeverageName>
+		<Image>food-b-image4.jpg</Image>
+		<Description> New Style Wine</Description>
+		<Type>Liquor</Type>
+		<Price>15</Price>
+	</Item>
+</MenuList>
